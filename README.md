@@ -1,11 +1,6 @@
 # TOS
 This tool should only be used for educational purposes only, this tool is used to demonstrate penetration testing on how certain cyber-criminals can bruteforce certain websites  to check the validity of accounts. Please do not use this for illegal activity and only use it as a reference.
 
-# Requirements
-- python3x
-- open cmd in the same direction and type
-``pip install -r requirements.txt``
-
 # Download
 Soon
 
