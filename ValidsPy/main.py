@@ -70,6 +70,40 @@ def print_logs(arg):
     lock.release()
 
 
+def check_version():
+    try:
+        getversion = requests.get("https://raw.githubusercontent.com/Stainpy/ValidsPy/main/version.json")
+        data = getversion.json()
+        current_version = data['version']
+        url = data['link']
+        if version != current_version:
+            main_menu()
+            while 1:
+                inp = input(colors.yellow + f" New update available!\n Your current version is {version}, latest version is {current_version}\n [1]: Download now\n [2]: Skip\n > ")
+                if inp.isdigit():
+                    inp = int(inp)
+                    if inp == 1:
+                        link = webbrowser.open(url)
+                        time.sleep(1)
+                        os.system('cls')
+                        return link
+                    elif inp == 2:
+                        time.sleep(1)
+                        os.system('cls')
+                        break
+                    else:
+                        print(colors.red + " Error!! Please choose one of available modes.")
+                        pass
+                else:
+                    print(colors.red + " Error!! Please enter a digit.")
+    except Exception as e:
+        main_menu()
+        print(colors.red + " Something went wrong while checking for updates!")
+        # os.system('pause>nul')
+        time.sleep(3)
+        os.system('cls')
+
+
 def updateTitle():
     meow = int(cpm_counter.cpm())
     ctypes.windll.kernel32.SetConsoleTitleW(f"{work} Valid Email | [Status] {status.wordlist}/{status.loaded_wordlist} [Errors] {status.errors} [CPM] {meow} | [Valid] {status.valid} [Invalid] {status.invalid}")
@@ -858,6 +892,8 @@ def Godaddy(q,proxies,log,proxy_type):
 
 
 if __name__ == "__main__":
+    version = 1.0
+    check_version()
     main_menu()
 
     open("proxies.txt", "a").close()
