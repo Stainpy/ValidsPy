@@ -12,8 +12,6 @@ class colors:
 
 
 def main_menu():
-    os.system("title AIO Vaild Email Checker")
-
     title = print("""
 
                             \u001b[0m\033[1m██╗   ██╗ █████╗ ██╗     ██╗██████╗ ███████╗    \u001B[34m██████╗ \u001b[33;1m██╗   ██╗
