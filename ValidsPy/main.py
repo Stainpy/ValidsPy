@@ -893,6 +893,7 @@ def Godaddy(q,proxies,log,proxy_type):
 
 if __name__ == "__main__":
     version = 1.0
+    os.system(f"title AIO Vaild Email Checker v{version} - By StaiN#9677")
     check_version()
     main_menu()
 
