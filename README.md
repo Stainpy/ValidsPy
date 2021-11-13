@@ -9,4 +9,4 @@ Soon
 - Discord: [StaiN#9677](https://discordapp.com/users/289106753277263872)
 
 # Donate
-Bitcoin Address: ``3BJcvDSwqPQKRxKqMgaAL9YA1T7ZfGRt9P``
+Bitcoin: ``3BJcvDSwqPQKRxKqMgaAL9YA1T7ZfGRt9P``
