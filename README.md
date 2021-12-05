@@ -1,5 +1,5 @@
 # TOS
-This tool should only be used for educational purposes only, this tool is used to demonstrate penetration testing on how certain cyber-criminals can bruteforce certain websites  to check the validity of the mails. Please do not use this for illegal activity and only use it as a reference.
+This tool should only be used for educational purposes only, this tool is used to demonstrate penetration testing on how certain cyber-criminals can bruteforce certain websites. Please do not use this for illegal activity and only use it as a reference.
 
 # Download
 [Latest Release](https://github.com/Stainpy/ValidsPy/releases/download/ValidsPy-v1.0/ValidsPy_v1.0.exe)
