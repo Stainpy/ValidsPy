@@ -79,7 +79,7 @@ def threads():
             num_threads = int(num_threads)
             if num_threads == 0:
                 print(colors.red + " Wrong Threads Number!! Please choose from 1 to 200.")
-            elif num_threads <= 200:
+            elif num_threads <= 1000:
                 return num_threads
             else:
                 print(colors.red + " Wrong Threads Number!! Max threads is 200.")
@@ -91,10 +91,10 @@ def logs():
         Show_Logs = (input(colors.normal + " Show Logs:\n [1]: Yes\n [2]: No\n > ")) 
         if Show_Logs.isdigit():
             Show_Logs = int(Show_Logs)
-            if Show_Logs == 0:
-                print(colors.red + " Wrong Threads Number!! Please choose from 1 to 200.")
-            elif Show_Logs <= 2:
+            if Show_Logs == 1:
                 return Show_Logs
+            elif Show_Logs == 2:
+                break
             else:
                 print(colors.red + " Error!! Please choose one of available modes.")
         else:
